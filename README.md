@@ -1,3 +1,6 @@
+
+![BMI Calculator](Output.png)
+
 **BMI Calculator**
 
 This is a simple BMI (Body Mass Index) calculator web application created using HTML, CSS, and JavaScript. BMI is a measurement of a person's body fat based on their weight and height. This application allows users to input their weight in kilograms and height in centimeters and calculates their BMI. Based on the calculated BMI, it provides information about whether the user is underweight, normal weight, overweight, or obese.
