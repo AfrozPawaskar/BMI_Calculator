@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 80%;
+    /* Use percentage for width */
+    max-width: 500px;
+    /* Set a maximum width for larger screens */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.text-box {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.text-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: white;
+    color: royalblue;
+    border: 1px solid royalblue;
+}
+
+.res {
+    font-weight: 700;
+    margin: 10px 0px;
+    font-size: 18px;
+    color: royalblue;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
+
+    .input-group {
+        text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-family: 'Ubuntu', sans-serif;
+        background-color: royalblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 18px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
+    }
+}

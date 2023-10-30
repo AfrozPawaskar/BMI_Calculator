@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <!-- Input Groups For Weight kg, Height cm-->
+        
+        <h2>BMI Calculator</h2>
+
+        <div class="input-group">
+            <label for="heightFeet">Height In cm</label>
+            <input type="number" class="text-box" id="height" placeholder="Height in cm" required>
+        </div>
+
+        <div class="input-group">
+            <label for="weight">Weight In kg</label>
+            <input type="number" class="text-box" id="weight" placeholder="Weight in kg" required>
+        </div>
+
+        <div class="res">
+            <p id="bmi-res">Enter your details to check BMI</p>
+        </div>
+
+        <input type="submit" value="Check BMI" onclick="calculateBtn()">
+        <input type="reset" value="Reset" id="reset">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
